@@ -6,10 +6,29 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: rgb(236, 76, 138);
 }
 
-.App {
-  background-image: url('./components/assets/sky-1441936_1920.jpg');
+main {
+  background-image: url('./components/assets/purple-2618708_1920.jpg');
   background-size: cover;
   background-position: bottom;
+  min-height: 40vh;
+}
+
+header {
+  display: flex;
+  gap: 23rem;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+  min-height: 40vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
 }
