@@ -3,6 +3,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import { Link } from 'react-router-dom';
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
+import MoreWeatherCondition from '../moreInfoWeatherCondition';
 
 const SinglCityWeather = (props) => {
   const {
@@ -29,46 +30,45 @@ const SinglCityWeather = (props) => {
   } = props;
 
   return (
-    <>
-      <section className="location/box">
-        <div className="more-link">
-          <Link
-            to={
-              `/more/${weather.weather.id}`
-            }
-            state={{
-              lon,
-              lat,
-              weather,
-              icon,
-              temp,
-              feels_like,
-              temp_min,
-              temp_max,
-              pressure,
-              humidity,
-              speed,
-              deg,
-              gust,
-              all,
-              country,
-              sunrise,
-              sunset,
-              timezone,
-              id,
-              name,
-            }}
-          >
-            <button className="button" type="button" id={id}>
-              <FaRegArrowAltCircleRight />
-            </button>
-          </Link>
-        </div>
-        <div className="location">
-          <h2>Belgrade</h2>
-        </div>
-      </section>
-    </>
+    <section className="location/box">
+      <div className="more-link">
+        <Link
+          to={
+            `/more/${weather.weather.id}`
+          }
+          state={{
+            lon,
+            lat,
+            weather,
+            icon,
+            temp,
+            feels_like,
+            temp_min,
+            temp_max,
+            pressure,
+            humidity,
+            speed,
+            deg,
+            gust,
+            all,
+            country,
+            sunrise,
+            sunset,
+            timezone,
+            id,
+            name,
+          }}
+        >
+          <button className="button" type="button" id={id}>
+            <FaRegArrowAltCircleRight />
+          </button>
+        </Link>
+      </div>
+      <div className="location">
+        <h2>Belgrade</h2>
+      </div>
+      <MoreWeatherCondition />
+    </section>
   );
 };
 

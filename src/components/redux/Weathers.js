@@ -19,42 +19,42 @@ export const addCity = (payload) => ({
   payload,
 });
 
-const duplicateData = (data) => {
-  const changed = [];
+data.forEach((obj) => {
+  const newObj = {
+    lon: obj.lon,
+    lat: obj.lat,
+    main: obj.weather.main,
+    icon: obj.weather.icon,
+    temp: obj.main.temp,
+    feels_like: obj.main.feels_like,
+    temp_min: obj.main.temp_min,
+    temp_max: obj.main.temp_max,
+    pressure: obj.main.pressure,
+    humidity: obj.main.humidity,
+    speed: obj.wind.speed,
+    deg: obj.wind.deg,
+    gust: obj.wind.gust,
+    all: obj.clouds.all,
+    country: obj.sys.country,
+    sunrise: obj.sys.sunrise,
+    sunset: obj.sys.sunset,
+    timezone: obj.timezone,
+    id: obj.weather.Id,
+    name: obj.name,
+  };
+  changed.push(newObj);
+});
+return changed;
 
-  data.forEach((obj) => {
-    const newObj = {
-      lon: obj.lon,
-      lat: obj.lat,
-      main: obj.weather.main,
-      icon: obj.weather.icon,
-      temp: obj.main.temp,
-      feels_like: obj.main.feels_like,
-      temp_min: obj.main.temp_min,
-      temp_max: obj.main.temp_max,
-      pressure: obj.main.pressure,
-      humidity: obj.main.humidity,
-      speed: obj.wind.speed,
-      deg: obj.wind.deg,
-      gust: obj.wind.gust,
-      all: obj.clouds.all,
-      country: obj.sys.country,
-      sunrise: obj.sys.sunrise,
-      sunset: obj.sys.sunset,
-      timezone: obj.timezone,
-      id: obj.weather.Id,
-      name: obj.name,
-    };
-    changed.push(newObj);
-  });
-  return changed;
-};
 
 const getWeather = createAsyncThunk(CITY_WEATHER, async () => {
-  const response = await fetch(API_URL);
-  const data = await response.json();
-  const altered = duplicateData(data);
-  return altered;
+  let result = [];
+  await fetch(API_URL)
+    .then((res) => res.json())
+    .then((data) => { result = data; });
+  console.log(result);
+  return result;
 });
+
 
 export { getWeather };

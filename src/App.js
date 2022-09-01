@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header';
-import WeatherHome from './components/pages/Home';
+import Home from './components/pages/Home';
 import MoreWeatherCondition from './components/moreInfoWeatherCondition';
 
 import './App.css';
@@ -12,8 +12,9 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route exact path="/" element={<WeatherHome />} />
-        <Route path="/MoreWeatherCondition" element={<MoreWeatherCondition />} />
+        <Route exact path="/" index element={<Home />} />
+        <Route exact path="/Home" index element={<Home />} />
+        <Route path="MoreWeatherCondition" element={<MoreWeatherCondition />} />
       </Routes>
     </Router>
   );
