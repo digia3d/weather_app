@@ -14,7 +14,8 @@ function App() {
       <Routes>
         <Route exact path="/" index element={<Home />} />
         <Route exact path="/Home" index element={<Home />} />
-        <Route path="MoreWeatherCondition" element={<MoreWeatherCondition />} />
+        <Route path="/weather/:day" element={<MoreWeatherCondition />} />
+
       </Routes>
     </Router>
   );

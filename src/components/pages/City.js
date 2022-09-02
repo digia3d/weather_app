@@ -7,9 +7,6 @@ import MoreWeatherCondition from '../moreInfoWeatherCondition';
 
 const SinglCityWeather = (props) => {
   const {
-    lon,
-    lat,
-    weather,
     icon,
     temp,
     feels_like,
@@ -34,12 +31,9 @@ const SinglCityWeather = (props) => {
       <div className="more-link">
         <Link
           to={
-            `/more/${weather.weather.id}`
+            `/more/${id}`
           }
           state={{
-            lon,
-            lat,
-            weather,
             icon,
             temp,
             feels_like,
@@ -73,9 +67,6 @@ const SinglCityWeather = (props) => {
 };
 
 SinglCityWeather.propTypes = {
-  lon: PropTypes.number.isRequired,
-  lat: PropTypes.number.isRequired,
-  weather: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
   feels_like: PropTypes.number.isRequired,
   temp: PropTypes.number.isRequired,

@@ -1,40 +1,42 @@
-import { React, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { fetchWeather } from '../redux/action/action';
 
-import { getWeather } from '../redux/Weathers';
 import SinglCityWeather from './City';
 
 function Home() {
-  const weathers = useSelector((state) => state.weathers);
+  const weather = useSelector((state) => state.weather);
   const dispatch = useDispatch();
-  console.log(weathers);
+  const [weatherLoaded, setWeatherLoaded] = useState(false);
   useEffect(() => {
-    dispatch(getWeather());
-  }, [dispatch]);
+    if (weatherLoaded) return;
+    dispatch(fetchWeather());
+    setWeatherLoaded(true);
+  }, []);
 
   return (
     <div className="weather-card">
-      {weathers.map((weather) => (
+      {weather?.map((city) => (
         <SinglCityWeather
-          key={weather.id}
-          id={weather.weather.id}
-          weather={weather.main}
-          icon={weather.icon}
-          temp={weather.main.temp}
-          feels_like={weather.feels_like}
-          temp_min={weather.temp_min}
-          temp_max={weather.temp_max}
-          pressure={weather.pressure}
-          humidity={weather.humidity}
-          speed={weather.speed}
-          deg={weather.deg}
-          gust={weather.gust}
-          all={weather.all}
-          country={weather.country}
-          sunrise={weather.sunrise}
-          sunset={weather.sunset}
-          timezone={weather.timezone}
-          name={weather.name}
+          key={city.id}
+          id={city.weather.id}
+          weather={city.main}
+          icon={city.icon}
+          temp={city.main.temp}
+          feels_like={city.feels_like}
+          temp_min={city.temp_min}
+          temp_max={city.temp_max}
+          pressure={city.pressure}
+          humidity={city.humidity}
+          speed={city.speed}
+          deg={city.deg}
+          gust={city.gust}
+          all={city.all}
+          country={city.country}
+          sunrise={city.sunrise}
+          sunset={city.sunset}
+          timezone={city.timezone}
+          name={city.name}
         />
       ))}
     </div>
