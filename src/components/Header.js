@@ -18,24 +18,23 @@ function Header() {
   return (
     <main>
       <header className="header">
-        <div className="logo">
-          <Link className="logo-link" to="/Home">
-            <h2>
-              <FaAngleLeft size={24} />
-              Back
-            </h2>
-          </Link>
-          <Link className="logo-link" to="/City">City</Link>
-        </div>
-        <div className="container">
-          <div className="title">
-            <h1>Weather App</h1>
-          </div>
-          <div className="date">
-            {dateBuilder(new Date())}
-          </div>
+        <Link className="logo-link" to="/Home">
+          <FaAngleLeft size={24} />
+        </Link>
+        <div className="date">
+          {dateBuilder(new Date())}
         </div>
       </header>
+      <section className="section">
+        <div className="conttitl">
+          <p className="title">
+            Weather App
+          </p>
+          <h1 className="titleM">
+            London
+          </h1>
+        </div>
+      </section>
     </main>
   );
 }
