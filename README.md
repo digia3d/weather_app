@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+### Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React capstone project is about building a mobile web application to check a list of metrics.This weather App is created to show a list of weather informations for London for 5 days and 3 hours.
 
-## Available Scripts
+### Built With
 
-In the project directory, you can run:
+- html/scss/js/React/redux/API.
+- following linters standards.
+- following github flows standards.
 
-### `npm start`
+### Loom representation of project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## [App Presentation](https://www.loom.com/share/fe125f2fdf214cfd8bccbae31ca26eac)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Getting Started
 
-### `npm test`
+To get a local copy of this project, follow these simple steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Open GitHub and go to my GitHub repository name: weather_app
 
-### `npm run build`
+-- Click “Code” and copy the given URL.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Open “Git Bash” and change the current working directory to the location where you want the cloned directory.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Type git clone in the terminal, paste the URL you copied earlier, and press “enter” to create your local clone.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Run web_app on your local machine
 
-### `npm run eject`
+> $ git clone {repository URL}
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## use vs-code or any IDE to view code
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> $ npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> then
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> $ npm start
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Authors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **Aleksandra Ujvari**
+- GitHub: [@digia3d](https://github.com/digia3d)
+- Twitter: [@ujvari65](https://twitter.com/ujvari65)
+- LinkedIn: [Aleksandra (Digital Marketing A3D) Ujvari](https://www.linkedin.com/in/aleksandra-ujvari-85235a210/)
 
-### Code Splitting
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions, issues and feature requests are welcome!
 
-### Analyzing the Bundle Size
+Feel free to check the [issues page](https://github.com/digia3d/weather_app/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgments
 
-### Making a Progressive Web App
+* [Behance Ballhead Application](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Hat tip to anyone whose code was used
 
-### Advanced Configuration
+- Microverse
+- Inspiration
+- etc
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Show your support
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if you like this project!
