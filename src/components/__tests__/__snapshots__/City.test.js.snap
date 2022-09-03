@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render the component 1`] = `
+Array [
+  <div
+    className="info"
+  >
+    Forecast for five days
+  </div>,
+  <div
+    className="weather-card"
+  />,
+]
+`;

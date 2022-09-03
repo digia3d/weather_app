@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: rgb(236, 76, 138);
+}
+
+main {
+  background-image: url('./components/assets/clouds-836039_1920.jpg');
+  background-color: rgb(236, 76, 138);
+  background-size: cover;
+  background-position: bottom;
+  justify-content: center;
+  min-height: 32vh;
+}
+
+image {
+  filter: brightness(50%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-link {
+  color: rgb(249, 248, 248);
+}
+
+.title {
+  color: rgb(249, 248, 248);
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.titleM {
+  font-size: 3rem;
+}
+
+.conttitl {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding-top: 3rem;
+}
+
+.date {
+  display: flex;
+  color: white;
+}
+
+header {
+  padding-top: 1rem;
+  display: flex;
+  gap: 30%;
+  padding-left: 25px;
+  min-height: 4vh;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  min-height: 32vh;
+}
+
+.logo {
+  display: flex;
+}
+
+.info {
+  display: flex;
+  justify-content: left;
+  color: white;
+  padding: 10px 0 0 10px;
+}
+
+.weather-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
+
+.headline {
+  width: 100%;
+  background-color: rgb(236, 76, 138);
+  text-align: center;
+  color: white;
+}
+
+.location-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: white;
+  height: 13rem;
+  gap: 13px;
+}
+
+.location-box:nth-child(4n-1),
+.location-box:nth-child(4n-2) {
+  background: #d14b7e;
+}
+
+.condition {
+  display: flex;
+  gap: 51px;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 66px;
+}
+
+.time {
+  gap: 5rem;
+}
+
+.temp {
+  display: flex;
+  gap: 74px;
+}
+
+.button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.more-link {
+  display: flex;
+  justify-content: right;
+}
+
+h3 {
+  padding: 1rem;
+}
+
+span {
+  font-weight: bold;
+}
+
+.datemo,
+.infote,
+.con,
+.feels_like,
+.temp_min,
+.temp_max,
+.pressure,
+.humidity,
+.speed,
+.deg,
+.gust,
+.all {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+  min-height: 3rem;
+}
+
+.datemo,
+.con,
+.temp_min,
+.pressure,
+.all {
+  background-color: #d14b7e;
+}
+
+.description {
+  color: white;
+}
+
+.rain:nth-child(3) {
+  background: #8c3254;
+}
