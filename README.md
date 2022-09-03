@@ -12,6 +12,8 @@ This React capstone project is about building a mobile web application to check 
 
 ## [App Presentation](https://www.loom.com/share/fe125f2fdf214cfd8bccbae31ca26eac)
 
+## [LIVE DEMO](https://elegant-caramel-18332d.netlify.app/)
+
 ### Getting Started
 
 To get a local copy of this project, follow these simple steps:
