@@ -114,7 +114,7 @@ header {
 
 .condition {
   display: flex;
-  gap: 40px;
+  gap: 51px;
 }
 
 .location {
@@ -124,16 +124,13 @@ header {
   gap: 66px;
 }
 
-.loc {
-  display: flex;
-  flex-direction: column;
-  padding-left: 4rem;
-  padding-top: 2rem;
+.time {
+  gap: 5rem;
 }
 
 .temp {
   display: flex;
-  gap: 65px;
+  gap: 74px;
 }
 
 .button {

@@ -25,22 +25,20 @@ const SinglCityWeather = (prop) => {
           </button>
         </Link>
       </div>
-      <div className="loc">
-        <div className="location">
-          <span>Date  Time</span>
-          <div className="time">{date}</div>
-        </div>
-        <div className="condition">
-          <span>
-            Weather
-          </span>
-          {weather}
-        </div>
-        <div className="temp">
-          <span>Temp</span>
-          {temp}
-          &#8451;
-        </div>
+      <div className="location">
+        <span>Date  Time</span>
+        {date}
+      </div>
+      <div className="condition">
+        <span>
+          Weather
+        </span>
+        {weather}
+      </div>
+      <div className="temp">
+        <span>Temp</span>
+        {temp}
+        &#8451;
       </div>
     </section>
   );

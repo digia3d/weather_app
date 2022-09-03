@@ -12,10 +12,9 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route exact path="/" index element={<Home />} />
         <Route exact path="/Home" index element={<Home />} />
+        <Route exact path="/" index element={<Home />} />
         <Route path="/weather/:day" element={<MoreWeatherCondition />} />
-
       </Routes>
     </Router>
   );

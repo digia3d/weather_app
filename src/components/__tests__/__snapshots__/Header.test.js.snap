@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test of Header test if Header is rendered 1`] = `
+<main>
+  <header
+    className="header"
+  >
+    <a
+      className="logo-link"
+      href="#/Home"
+      onClick={[Function]}
+    >
+      <svg
+        fill="currentColor"
+        height={24}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 256 512"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+        />
+      </svg>
+    </a>
+    <div
+      className="date"
+    >
+      Saturday 3 September 2022
+    </div>
+  </header>
+  <section
+    className="section"
+  >
+    <div
+      className="conttitl"
+    >
+      <p
+        className="title"
+      >
+        Weather App
+      </p>
+      <h1
+        className="titleM"
+      >
+        London
+      </h1>
+    </div>
+  </section>
+</main>
+`;

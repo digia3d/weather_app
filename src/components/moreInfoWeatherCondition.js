@@ -34,7 +34,6 @@ const MoreWeatherCondition = () => {
             {temp}
             &#8451;
           </div>
-
           <span className="con">Condition</span>
           <div className="feels_like">
             <span>Feels like</span>
